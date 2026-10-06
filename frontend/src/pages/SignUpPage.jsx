@@ -93,7 +93,7 @@ function SignUpPage() {
                   placeholder="you@example.com"
                   value={formData.email}
                   onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
+                    setFormData({ ...formData, email: e.target.value.toLowerCase() })
                   }
                 />
               </div>
@@ -112,7 +112,7 @@ function SignUpPage() {
                 <input
                   type={showPassword ? "text" : "password"}
                   className={`input w-full pl-10`}
-                  placeholder="●●●●●●"
+                  placeholder="••••••"
                   value={formData.password}
                   onChange={(e) =>
                     setFormData({ ...formData, password: e.target.value })
