@@ -35,7 +35,7 @@ function ProfilePage() {
               <img
                 src={selectedImage || authUser?.profilePic || "/image.png"}
                 alt="profile"
-                className="size-32 rounded-full"
+                className="size-32 rounded-full object-cover"
               />
               <label
                 htmlFor="avatar-upload"
